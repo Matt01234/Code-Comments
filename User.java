@@ -1,5 +1,7 @@
 /**
-*   Simple User class with code comments
+*   Simple User class with code comments.
+*   The program contains a User class which
+*   stores data about a particular user.
 */
 
 import java.util.regex.Matcher;
