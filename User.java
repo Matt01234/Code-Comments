@@ -22,15 +22,15 @@ public class User{
         User userThree = new User("sally123", "Sally", "sally@email.com", "password789");
         System.out.println("User Three: " + userThree);
         // the amount of users instantiated
-        System.out.println("Number of users: " + User.total());
+       System.out.println("Number of users: " + User.getTotalUsers());
     }
     
     private static int totalUsers; // static field stores the total amount of users
     /**
     *   total static method @return totalUsers
     */
-    private static int total(){
-        return totalUsers;
+    private static int getTotalUsers(){
+        return User.totalUsers;
     }
     
     private String username;    // field stores the username of a user
@@ -67,7 +67,7 @@ public class User{
     /**
     *   setEmail method sets the field email to 
     *   @param email only if the email is 
-    *   in correct form or @throws an 
+    *   in correct form or @throw an 
     *   IllegalArgumentException
     */
     public void setEmail(String email){
@@ -83,7 +83,7 @@ public class User{
     *   setPassword method sets the field password to 
     *   @param password after the password has been
     *   encrypted if the password is greater than
-    *   or equal to 6 characters or @throws an
+    *   or equal to 6 characters or @throw an
     *   IllegalArgumentException
     */
     public void setPassword(String password){
