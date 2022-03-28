@@ -46,7 +46,7 @@ public class User{
         this.setName(name);
         this.setEmail(email);
         this.setPassword(password);
-        totalUsers++;
+        User.totalUsers++;
     }
     /**
     *   setUsername method sets the field username
